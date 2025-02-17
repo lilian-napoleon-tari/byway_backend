@@ -6,7 +6,7 @@ const bcrypt = require("bcryptjs"); // Authenticating the users
 const signup = async (req, res) => {
   try {
     // Get data from the request body
-    const { firstname, Lastname, username, password, email, phone } = req.body;
+    const { firstname, lastname, username, password, email, phone } = req.body;
 
     //Check for existing user
     const existingUser = await User.findOne({

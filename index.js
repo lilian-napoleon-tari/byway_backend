@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 //route
-app.use("api/auth",authRoutes );
+app.use("/api/auth", authRoutes );
 
 // Mongodb connection
 mongoose
